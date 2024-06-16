@@ -12,7 +12,30 @@ a {
 
 ul, ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+    display: flex;
+    align-items:center;
+}
+
+.container-first {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 
 .logo {
     color: #4D5AE5;
@@ -22,10 +45,16 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: #2E2F42;
+}
+
+.menu-link {
+display: flex;
+gap: 40px;
 }
 
 .nav-link {
@@ -34,7 +63,14 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    
 }
+
+/* .link-nav {
+    padding: 24px 0;
+} */
 
 .nav-link:hover,
 .nav-link:focus {
@@ -43,6 +79,14 @@ ul, ol {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+    
+}
+
+.address-table {
+    display: flex;
+    gap: 40px;
+        
 }
 
 .address-link {
@@ -86,12 +130,44 @@ ul, ol {
     background-color: #404BBF;
 }
 
+.section-two {
+
+padding: 120px 0;}
+
+.visually-hidden{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+.section-two-div {
+
+}
+
+.section-two-list{
+    display: flex;
+    gap: 24px;
+}
+
+.section-two-list-items {
+width: calc((100%-72px)/4)
+
+
+}
 .subtittle-second {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 
 .about-one {
@@ -106,6 +182,10 @@ ul, ol {
     background-color: #F4F4FD; 
 }
 
+.section-third {
+    padding: 120px 0;
+}
+
 .subtitle-third {
     font-size: 36px;
     font-weight: 500;
@@ -114,9 +194,13 @@ ul, ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-bottom: 72px
 }
 
-
+.list-third-section {
+    display: flex;
+    gap: 24px;
+}
 
 .about-two {
     font-size: 16px;
@@ -128,6 +212,8 @@ ul, ol {
 }
 .list-items {
     background-color: #FFFFFF;
+    width: calc((100%-72px)/4);
+    border-radius: 0px 0px 4px 4px ;
 }
 
 .subtitle-third-one {
@@ -137,11 +223,33 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-align: center;
+    margin-bottom: 8px;
 
 
 }
 
+.name-profession {
+    padding: 32px 0;
+}
 
+
+.list-fouth-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.items-fourt-secton {
+    width: calc((100%-48px)/3);
+}
+
+.app-diskription {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .our-portfolio-title {
     font-size: 36px;
@@ -150,6 +258,7 @@ ul, ol {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
 .title-section-fourth {
@@ -158,6 +267,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 
@@ -167,10 +277,13 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
-
+.section-fourth{
+    padding: 120px 0 120px 0;
+}
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .logo-logo {
@@ -182,6 +295,8 @@ letter-spacing: 0.02em;
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
@@ -194,4 +309,5 @@ letter-spacing: 0.02em;
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
